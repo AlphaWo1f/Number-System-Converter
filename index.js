@@ -1,7 +1,7 @@
 
 function binToDec(){
 
-    var number = document.getElementById("bin").value;
+    var number = document.getElementById("binToDec").value;
     var output = parseInt(number,2);
     document.getElementById("htmlResult1").innerHTML = output;
     }
@@ -14,8 +14,8 @@ function binToDec(){
 
 function decToBin(){
 
-    var str = document.getElementById("decToBin").value;
-    var output = (str >>> 0).toString(2);
+    var number = document.getElementById("decToBin").value;
+    var output = (number >>> 0).toString(2);
     document.getElementById("htmlResult2").innerHTML = output;
     }
     
@@ -27,8 +27,8 @@ function decToBin(){
 
 function decToHexa(){
 
-    var str = document.getElementById("decToHexa").value;
-    var output = (str >>> 0).toString(16);
+    var number = document.getElementById("decToHexa").value;
+    var output = (number >>> 0).toString(16);
     document.getElementById("htmlResult3").innerHTML = output;
     }
     
@@ -40,8 +40,8 @@ function decToHexa(){
 
 function hexaToDec(){
 
-    var str = document.getElementById("hexaToDec").value;
-    var output = parseInt(str, 16);
+    var number = document.getElementById("hexaToDec").value;
+    var output = parseInt(number,16);
     document.getElementById("htmlResult4").innerHTML = output;
     }
     
@@ -53,8 +53,8 @@ function hexaToDec(){
 
 function binToHexa(){
 
-    var str = document.getElementById("binToHexa").value;
-    var output = parseInt(str, 2).toString(16);
+    var number = document.getElementById("binToHexa").value;
+    var output = parseInt(number,2).toString(16);
     document.getElementById("htmlResult5").innerHTML = output;
     }
     
@@ -66,8 +66,8 @@ function binToHexa(){
 
 function hexaToBin(){
 
-    var str = document.getElementById("hexaToBin").value;
-    var temp = parseInt(str, 16);
+    var number = document.getElementById("hexaToBin").value;
+    var temp = parseInt(number,16);
     var output = (temp >>> 0).toString(2);
 
     document.getElementById("htmlResult6").innerHTML = output;
